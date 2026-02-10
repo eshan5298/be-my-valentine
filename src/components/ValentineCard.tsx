@@ -17,13 +17,17 @@ export function ValentineCard() {
   const DODGE_RADIUS_PX = 55; // lower = you can get closer before it dodges
   const MIN_RESPAWN_DISTANCE_PX = 80; // keep it from respawning under your cursor
 
+  // IMPORTANT: Use Vite's base URL so media works on GitHub Pages
+  // (where the site is served from /be-my-valentine/).
+  const BASE_URL = import.meta.env.BASE_URL;
+
   // Put the audio file in: public/audio/spring-snow-10cm.mp3
-  const MUSIC_SRC_MP3 = "/audio/spring-snow-10cm.mp3";
-  const MUSIC_SRC_OGG = "/audio/spring-snow-10cm.ogg"; // optional fallback
+  const MUSIC_SRC_MP3 = `${BASE_URL}audio/spring-snow-10cm.mp3`;
+  const MUSIC_SRC_OGG = `${BASE_URL}audio/spring-snow-10cm.ogg`; // optional fallback
   const MUSIC_VOLUME = 0.35;
 
   // Put the video file in: public/video/accepted.mp4
-  const ACCEPTED_VIDEO_SRC_MP4 = "/video/accepted.mp4";
+  const ACCEPTED_VIDEO_SRC_MP4 = `${BASE_URL}video/accepted.mp4`;
 
   const [accepted, setAccepted] = useState(false);
   const [noPos, setNoPos] = useState<Point | null>(null);
