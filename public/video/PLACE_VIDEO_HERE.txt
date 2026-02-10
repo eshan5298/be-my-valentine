@@ -1,0 +1,9 @@
+Put your video file in this folder.
+
+For this project, the app is configured to look for:
+- public/video/accepted.mp4
+
+Notes:
+- The video is displayed as a portrait 9:16 “phone-like” frame.
+- It plays muted, loops, and starts automatically after clicking "Yes".
+

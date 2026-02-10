@@ -1,0 +1,12 @@
+Put your music file(s) in this folder.
+
+For this project, the app is configured to look for:
+- public/audio/spring-snow-10cm.mp3
+
+Optional (fallback format):
+- public/audio/spring-snow-10cm.ogg
+
+After adding the file, run:
+  npm run dev
+Then click "Yes" to start the music.
+
